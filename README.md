@@ -44,41 +44,6 @@
 
 ---
 
-## Project Structure
-
-app/
-├── src/
-│   ├── main/
-│   │   ├── java/com/conestoga/taskmanager/
-│   │   │   ├── ui/               # Folder for all activities, fragments, and UI-related code
-│   │   │   │   ├── AddTaskActivity.kt
-│   │   │   │   ├── EditTaskActivity.kt
-│   │   │   │   ├── TaskDetailActivity.kt
-│   │   │   │   └── TaskListActivity.kt
-│   │   │   ├── adapters/          # Folder for adapters
-│   │   │   │   └── TaskAdapter.kt
-│   │   │   ├── data/              # Folder for data-related code (models, database helpers, etc.)
-│   │   │   │   ├── database/
-│   │   │   │   │   └── TaskDatabaseHelper.kt
-│   │   │   │   └── models/
-│   │   │   │       └── Task.kt
-│   │   └── res/
-│   │       ├── layout/            # Layout files for your activities and fragments
-│   │       │   ├── activity_add_task.xml
-│   │       │   ├── activity_edit_task.xml
-│   │       │   ├── activity_task_detail.xml
-│   │       │   ├── activity_task_list.xml
-│   │       │   └── item_task.xml
-│   │       ├── values/            # Strings and other resource values
-│   │       │   └── strings.xml
-│   │       └── menu/              # Menu resources for activities or fragments
-│   │           └── task_list_menu.xml
-│   └── AndroidManifest.xml
-└── build.gradle
-
-
----
-
 ## Installation & Setup
 
 1. **Clone the repository**
