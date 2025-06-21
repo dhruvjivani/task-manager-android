@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_sort_date"
+        android:title="Sort by Due Date" />
+    <item
+        android:id="@+id/action_sort_priority"
+        android:title="Sort by Priority" />
+    <item
+        android:id="@+id/action_toggle_theme"
+        android:title="Toggle Theme" />
+</menu>
