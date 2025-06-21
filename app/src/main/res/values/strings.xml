@@ -51,6 +51,7 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="error_all_fields_required">Server Error</string>
+    <string name="loading_quote">Loading quote...</string>
 
     <!-- Removed 'error_all_fields_required' or change its text if needed -->
 </resources>

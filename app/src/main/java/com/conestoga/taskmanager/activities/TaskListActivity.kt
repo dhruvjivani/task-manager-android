@@ -18,6 +18,7 @@ import org.json.JSONObject
 import java.net.HttpURLConnection
 import java.net.URL
 import com.conestoga.taskmanager.R
+import org.json.JSONArray
 
 class TaskListActivity : AppCompatActivity() {
 
@@ -164,15 +165,23 @@ class TaskListActivity : AppCompatActivity() {
     private fun fetchMotivationalQuote() {
         Thread {
             try {
-                val conn = URL("https://api.quotable.io/random").openConnection() as HttpURLConnection
+                val conn = URL("https://zenquotes.io/api/random").openConnection() as HttpURLConnection
                 conn.requestMethod = "GET"
                 val json = conn.inputStream.bufferedReader().readText()
-                val quote = JSONObject(json).getString("content")
+                // The response is a JSON array
+                val jsonArray = JSONArray(json)
+                val quoteObj = jsonArray.getJSONObject(0)
+                val quote = quoteObj.getString("q")
+                val author = quoteObj.getString("a")
+
                 runOnUiThread {
-                    Toast.makeText(this, "\"$quote\"", Toast.LENGTH_LONG).show()
+                    binding.textViewQuote.text = "\"$quote\" — $author"
                 }
             } catch (e: Exception) {
                 e.printStackTrace()
+                runOnUiThread {
+                    binding.textViewQuote.text = "Failed to load quote"
+                }
             }
         }.start()
     }
