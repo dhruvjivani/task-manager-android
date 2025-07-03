@@ -28,9 +28,9 @@
 
 ## Screenshots
 
-| Task List | Add Task | Edit Task | Task Details |
-|-----------|----------|-----------|--------------|
-| ![Task List](screenshots/task_list.png) | ![Add Task](screenshots/add_task.png) | ![Edit Task](screenshots/edit_task.png) | ![Task Detail](screenshots/task_detail.png) |
+| Task List | Add Task | Edit Task | Task Delete                                 |
+|-----------|----------|-----------|---------------------------------------------|
+| ![Task List](screenshots/task_list.png) | ![Add Task](screenshots/add_task.png) | ![Edit Task](screenshots/edit_task.png) | ![Task Detail](screenshots/task_delete.png) |
 
 ---
 
