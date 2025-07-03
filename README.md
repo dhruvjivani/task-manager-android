@@ -30,7 +30,7 @@
 
 | Task List | Add Task | Edit Task | Task Delete                                 |
 |-----------|----------|-----------|---------------------------------------------|
-| ![Task List](screenshots/task_list.png) | ![Add Task](screenshots/add_task.png) | ![Edit Task](screenshots/edit_task.png) | ![Task Detail](screenshots/task_delete.png) |
+| ![Task List](screenshots/task_list.png) | ![Add Task](screenshots/add_task.png) | ![Edit Task](screenshots/edit_task.png) | ![Task Detail](screenshots/delete_task.png) |
 
 ---
 
